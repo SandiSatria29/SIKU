@@ -20,9 +20,7 @@ return new class extends Migration
             $table->string('ton');
             $table->string('tanggal');
             $table->string('pelanggaran');
-            $table->string('sanksi');
-            $table->string('mulai');
-            $table->string('selesai');
+            $table->string('pelapor');
             $table->timestamps();
         });
     }

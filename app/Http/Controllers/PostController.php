@@ -10,9 +10,6 @@ class PostController extends Controller
     {
         //query get all data post
         $post = Post::orderBy('id','ASC')->get();
-
-        
-
         return view('post.index',compact('post'));
     }
 
@@ -31,9 +28,7 @@ class PostController extends Controller
             'kelas'=> 'required',
             'ton'=> 'required',
             'tanggal'=> 'required',
-            'sanksi'=> 'required',
-            'mulai'=> 'required',
-            'selesai'=> 'required'
+            'pelapor'=> 'required'
         ]);
 
         // insert ke table post
@@ -45,9 +40,7 @@ class PostController extends Controller
             'ton'=> $request->ton,
             'tanggal'=> $request->tanggal,
             'pelanggaran'=> $request->pelanggaran,
-            'sanksi'=> $request->sanksi,
-            'mulai'=> $request->mulai,
-            'selesai'=> $request->selesai
+            'pelapor'=> $request->pelapor
         ]);
 
         return redirect()->route('post.index');

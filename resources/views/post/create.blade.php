@@ -59,21 +59,9 @@
                         </select>
 
                         <div>
-                            <x-input-label for="Sanksi" :value="__('Sanksi')" />
-                            <x-text-input id="sanksi" name="sanksi" type="text" class="mt-1 block w-full" required />
-                            <x-input-error class="mt-2" :messages="$errors->get('sanksi')" />
-                        </div>
-
-                        <div>
-                            <x-input-label for="Mulai" :value="__('Mulai')" />
-                            <x-text-input id="mulai" name="mulai" type="date" class="mt-1 block w-full" required />
-                            <x-input-error class="mt-2" :messages="$errors->get('mulai')" />
-                        </div>
-
-                        <div>
-                            <x-input-label for="Selesai" :value="__('Selesai')" />
-                            <x-text-input id="selesai" name="selesai" type="date" class="mt-1 block w-full" required />
-                            <x-input-error class="mt-2" :messages="$errors->get('selesai')" />
+                            <x-input-label for="Pelapor" :value="__('Pelapor')" />
+                            <x-text-input id="pelapor" name="pelapor" type="text" class="mt-1 block w-full" required />
+                            <x-input-error class="mt-2" :messages="$errors->get('pelapor')" />
                         </div>
 
                         <div class="flex items-center gap-4">

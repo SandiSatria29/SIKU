@@ -19,9 +19,7 @@ class Post extends Model
         'ton',
         'tanggal',
         'pelanggaran',
-        'sanksi',
-        'mulai',
-        'selesai'
+        'pelapor'
     ];
 
     public function getCreatedAtAttribute()
